@@ -1,7 +1,7 @@
 language: python
 python:
   - 3.3
-script: pytest
+script: pytest test.py
 deploy:
   provider: elasticbeanstalk
   access_key_id: AKIAIBJ4FLOQRXHWKUHA
