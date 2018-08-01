@@ -1,6 +1,6 @@
 language: python
 python:
- -3.7
+ -3.7.0
 deploy:
   provider: elasticbeanstalk
   access_key_id: AKIAIBJ4FLOQRXHWKUHA
