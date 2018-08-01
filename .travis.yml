@@ -1,0 +1,15 @@
+language: python
+python:
+- '2.7'
+- '3.3'
+- pypy
+deploy:
+  provider: elasticbeanstalk
+  access_key_id: AKIAIBJ4FLOQRXHWKUHA
+  secret_access_key:
+    secure: uhNfOBBJXn/TDaMGUBUgyyFBEJvjwrrnwUZzCqHfBXdFPpfA0ZYIB829zzwnKR37cM2FO9piPUUVyGuWOa8416O9gdDzBLIng7YovLvaVLakwPisfCKXoT4JhgVs1y8O7AYkaMDQSqR3HbbzEeq1xoraJRkb8rkC/HkO2mDHvfTg254L0s4lhSBszE5PNa202hTHxdE2AhJ0LCnqFYAwc2n45f3NFgas1PuNvnB1LnTHuUjo0NnTDzbujMK6HyViwGL02KaOz/CUKo3brSEiJrnxT3wDf41jo5DHugJmwodSQwuJawGn2rWwaJArQJIV9aVul7OzGLUOd9fRQUovvTz2H8P9GpMcgW8fv5breYvWnDpcRlhRYWBWyPM4TgusDRgOE3epKr0uDg6RTb2WpHjzug/SbNk630l0JjUNO+06NNXMTh7mtH9ZGKEkwSVjslbXUvzZNxFCop/MxybnYH6DWsJwBZ0mpgcfCw8BcxJSiIDztmgIRipboROGDIpFQ1Ij0+1+jaDZBGKaJ+EET5tNSg+Hg0PY5n9LjvDGPwuAUZY/Y4+COQje6ezrQkCOkEXCx5pL+5ZHLlTBVLan3qEej1zDwC2tm3Oh6gpA7teaOGWJrZ+cQcw22zXp+nFC7INjS9fpgt1ga9FtUT5qDbcBIg37UkSI8zrjzun5MlI=
+  region: ap-southeast-2
+  app: flaskapp2
+  env: Flaskapp2-env
+  on:
+    repo: def1010/cuddly-enigma
